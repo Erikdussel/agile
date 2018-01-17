@@ -2,5 +2,7 @@
   "name": "hifi_prototype",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

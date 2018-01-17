@@ -8,6 +8,8 @@ import { FriendsPage } from '../pages/friends/friends';
 import { GamePage } from '../pages/game/game';
 import { ProfilePage } from '../pages/profile/profile';
 import { StorePage } from '../pages/store/store';
+import { InfoPage } from '../pages/info/info';
+import { LoginPage } from '../pages/login/login';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +17,7 @@ import { StorePage } from '../pages/store/store';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
@@ -30,9 +32,7 @@ export class MyApp {
       { title: 'Play', component: GamePage, icon: 'game-controller-b' },
       { title: 'Store', component: StorePage, icon: 'cart'}
     ];
-
   }
-
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

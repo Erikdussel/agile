@@ -1,22 +1,22 @@
 <ion-header>
 
-  <ion-navbar color="dark">
+  <ion-navbar transparent>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>MY PROFILE</ion-title>
+    <img src="/assets/treasure-tracker.png" />
   </ion-navbar>
 </ion-header>
-<ion-content padding>
-	<ion-card>
-	  <ion-item>
+<ion-content style="background: linear-gradient(45deg, white, #b2faa6);" padding>
+	<ion-card style="background:#c0e8cc;">
+	  <ion-item style="background:black">
 		<ion-avatar>
 			<img src="http://via.placeholder.com/350x350"  style="width:300px;height:300px;" />
 		</ion-avatar>
 	  </ion-item>
-		<h2 style="text-align: center;"><b>USER-NAME</b></h2>
+		<h1 style="text-align: center;padding-bottom:2vh;"><b>USER-NAME</b></h1>
 		<ion-grid>
-		  <ion-row>
+		  <ion-row style="padding-bottom:2vh;">
 		  	<ion-col col-10>
 		  		TREASURES FOUND: 
 		  	</ion-col>
@@ -24,11 +24,13 @@
 		  		0
 		  	</ion-col>
 		  </ion-row>
-		  <ion-row style="background:dark;">
-		  	<ion-col col-8>
-		  		ACHIEVEMENTS:
+		  <ion-row style="background:#c0e8cc;text-align:center;padding-bottom:2vh;">
+		  	<ion-col col-1>
 		  	</ion-col>
-		  	<ion-col col-2>
+		  	<ion-col col-10>
+		  	  <h2><b>ACHIEVEMENTS:</b></h2>
+		  	</ion-col>
+		  	<ion-col col-1>
 		  	</ion-col>
 		  </ion-row>
 		  <ion-row>
@@ -36,14 +38,21 @@
 		  	</ion-col>
 		  </ion-row>
 		  <ion-row>
-		  	<ion-col col-8>
-		  		UNLOCKED: 
+		  	<ion-col col-5>
 		  	</ion-col>
-		  	<ion-col col-2>
+		  	<ion-col col-4>
+		  	  <ion-icon style="font-size:10vh;" name='ribbon'></ion-icon>
+		  	</ion-col>
+		  	<ion-col col-4>
+		  	</ion-col>
+		  </ion-row>
+		  <ion-row>
+		   	<ion-col col-5>
+		   	</ion-col>
+		   	<ion-col col-4>
 				<b>[1/10]</b>
 		  	</ion-col>
-		  	<ion-col col-2>
-		  	  <ion-icon name='ribbon'></ion-icon>
+		  	<ion-col col-4>
 		  	</ion-col>
 		  </ion-row>
 		</ion-grid>

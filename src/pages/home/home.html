@@ -1,32 +1,41 @@
 <ion-header>
-  <ion-navbar color="dark">
+  <ion-navbar transparent>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>HOME</ion-title>
+    <img src="/assets/treasure-tracker.png"/>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-	<ion-card>
-	  <ion-card-header style="text-align:center;background-color:lightgray;border-top-left-radius:10px;border-top-right-radius:10px;">
-	  	<h1>LOGIN PLEASE</h1>
-	  </ion-card-header>
-	  <ion-card-content style="border-bottom-right-radius:10px;border-bottom-left-radius:10px;">
-	  	<ion-label>EMAIL OR USERNAME</ion-label>
-	  	<ion-input placeholder="e-mail or username"></ion-input>
-	  	<ion-label>PASSWORD</ion-label>
-	  	<ion-input placeholder="password"></ion-input>
-	  	<ion-item style="text-align:center;color: primary;">OR SIGN IN WITH: </ion-item>
-	  	<button style="background-color:blue;border-radius:10px;" ion-button block>
-	  		FACEBOOK
-	  	</button>
-	  	<button style="background-color:red;border-radius: 10px;" ion-button block>
-	  		GOOGLE
-	  	</button>
-	  	<button style="background-color:lightblue;border-radius:10px;" ion-button block>
-	  		TWITTER
-	  	</button>
-	  </ion-card-content>
-	</ion-card>
+  <ion-grid>
+  	<ion-row style="padding-top:50vh;">
+  		<ion-col col-4>
+  		</ion-col>
+  		<ion-col col-4>
+  		  <button ion-button (click)="openProfile()" block clear></button>
+  		</ion-col>
+  		<ion-col col-4>
+  		</ion-col>
+  	</ion-row>
+  	<ion-row style="padding-top:8vh;">
+  	  <ion-col col-3>
+  	  	<button ion-button (click)="openFriends()" block clear></button> 
+  	  </ion-col>
+  	  <ion-col col-6>
+  	  </ion-col>
+  	  <ion-col col-3>
+  	  	<button ion-button (click)="openStore()" block clear></button>
+  	  </ion-col>
+  	</ion-row>
+  	<ion-row>
+  	  <ion-col col-4>
+  	  </ion-col>
+  	  <ion-col col-4>
+  	  	<button ion-button (click)="showInfo()" block clear></button>
+  	  </ion-col>
+  	  <ion-col col-4>
+  	  </ion-col>
+  	</ion-row>
+  </ion-grid>
 </ion-content>

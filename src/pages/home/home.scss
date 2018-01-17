@@ -1,3 +1,10 @@
 page-home {
-
+	ion-content{
+	 	background-image: url("/assets/game.png");
+    	background-size: cover;
+    	background-position-x: 50%;	
+	}
+	img {
+		width: 90%;
+	}
 }

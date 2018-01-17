@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="dark">
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FRIENDS</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-searchbar
+  		[(ngModel)]="myInput"
+  		[showCancelButton]="shouldShowCancel"
+		  placeholder="Find your Friends!"
+  		(ionCancel)="onCancel($event)">
+  </ion-searchbar>
+  <ion-list>
+  	<ion-item>
+  	  <ion-thumbnail item-start>
+  	  	<img src="http://via.placeholder.com/350/09f/fff" />
+  	  </ion-thumbnail>
+  	  <h2>FRIEND_NAME</h2>
+  	  <p color="danger">Offline</p>
+  	  <button ion-button clear item-end>View</button>
+  	</ion-item>
+  	<ion-item>
+  	  <ion-thumbnail item-start>
+  	    <img src="http://via.placeholder.com/350/defabc/ggg" />
+  	  </ion-thumbnail>
+  	  <h2>FRIEND_NAME</h2>
+  	  <p color="secondary">Online</p>
+  	  <button ion-button clear item-end>View</button>
+  	</ion-item>
+  	<ion-item>
+  	  <ion-thumbnail item-start>
+  	    <img src="http://via.placeholder.com/350/0123456/ggg" />
+  	  </ion-thumbnail>
+  	  <h2>FRIEND_NAME</h2>
+  	  <p color="danger">Offline</p>
+  	  <button ion-button clear item-end>View</button>
+  	</ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col col-12>
+      <button ion-button block color="secondary">INVITE YOUR FRIENDS!</button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

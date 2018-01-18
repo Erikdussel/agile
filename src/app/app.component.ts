@@ -8,7 +8,6 @@ import { FriendsPage } from '../pages/friends/friends';
 import { GamePage } from '../pages/game/game';
 import { ProfilePage } from '../pages/profile/profile';
 import { StorePage } from '../pages/store/store';
-import { InfoPage } from '../pages/info/info';
 import { LoginPage } from '../pages/login/login';
 
 @Component({
